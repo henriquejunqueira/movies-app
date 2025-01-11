@@ -27,7 +27,10 @@ export default function MovieList() {
   return (
     <ul className='movie-list'>
       {movies.map((movie) => (
-        <li></li>
+        <li className='movie-card'>
+          <p>{movie.title}</p>
+          <p>{movie.overview}</p>
+        </li>
       ))}
     </ul>
   );
